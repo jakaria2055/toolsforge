@@ -14,7 +14,7 @@ const Home = () => {
                 alt="app logo"
                 className="h-8 w-auto"
               />
-              <span className="ml-2 text-xl font-semibold text-gray-800">
+              <span className="ml-2 text-xl font-bold text-gray-800">
                 ToolsForge
               </span>
             </div>
@@ -122,6 +122,28 @@ const Home = () => {
             </div>
             <p className="text-gray-600 text-sm">
               Read Blog with Pagination style.
+            </p>
+          </Link>
+
+           {/* Blog Pagination */}
+          <Link
+            to={"/rechart"}
+            className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 p-6 border border-gray-100 hover:border-green-200 group"
+          >
+            <div className="flex items-center mb-4">
+              <div className="p-3 bg-green-100 rounded-lg group-hover:bg-blue-500 transition-colors duration-300">
+                <img
+                  src="/icon/chart.svg"
+                  alt=""
+                  className="text-green-700 w-6 h-6 group-hover:text-white"
+                />
+              </div>
+              <h3 className="ml-4 text-lg font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
+                Re-Charts
+              </h3>
+            </div>
+            <p className="text-gray-600 text-sm">
+              Visualize all of your activity.
             </p>
           </Link>
 
