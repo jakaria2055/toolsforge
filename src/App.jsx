@@ -9,6 +9,8 @@ import ImgToPDF from "./Tools/ImgToPDF";
 import XLFileReader from "./Tools/XLFileReader";
 import ImageCompressureTools from "./Tools/ImageCompressureTools";
 import CodeEditorTool from "./Tools/CodeEditorTool";
+import Base64 from "./Tools/Base64";
+import ScreenRecorder from "./Tools/ScreenRecorder";
 
 const App = () => {
   return (
@@ -24,6 +26,8 @@ const App = () => {
         <Route path="/xl-reader" element={<XLFileReader />} />
         <Route path="/img-compress" element={<ImageCompressureTools />} />
         <Route path="/code-editor" element={<CodeEditorTool />} />
+        <Route path="/img-base64" element={<Base64 />} />
+        <Route path="/screen-recorder" element={<ScreenRecorder />} />
       </Routes>
     </>
   );
