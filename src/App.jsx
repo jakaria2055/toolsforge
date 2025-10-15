@@ -7,6 +7,8 @@ import ReChart from "./Tools/ReChart";
 import Camera from "./Tools/Camera";
 import ImgToPDF from "./Tools/ImgToPDF";
 import XLFileReader from "./Tools/XLFileReader";
+import ImageCompressureTools from "./Tools/ImageCompressureTools";
+import CodeEditorTool from "./Tools/CodeEditorTool";
 
 const App = () => {
   return (
@@ -20,6 +22,8 @@ const App = () => {
         <Route path="/camera" element={<Camera />} />
         <Route path="/image-pdf" element={<ImgToPDF />} />
         <Route path="/xl-reader" element={<XLFileReader />} />
+        <Route path="/img-compress" element={<ImageCompressureTools />} />
+        <Route path="/code-editor" element={<CodeEditorTool />} />
       </Routes>
     </>
   );
